@@ -27,6 +27,7 @@
 }
 .header .logo img:hover{
 transform: scale(1.2);
+
 }
 .header .nav-links{
 list-style: none;
