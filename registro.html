@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Identificarse</title>
     <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
     <header class="header">
         <div class="logo">
             <img src="/img/chatW.png" alt="logo">
+           
         </div>
         <nav>
             <ul class="nav-links">
@@ -17,6 +18,7 @@
                 <li><a href="chatear.html">Chatear</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
+            
         </nav>
         <div class="botones">
           <a href="ingresar.html" class="btn"><button>ingresar</button></a>
@@ -25,7 +27,7 @@
     </header>
     <section class="content">
         <div class="container">
-            <h1>Formulario de Contacto</h1>
+            <h1>Registrarse</h1>
             <form>
               <div class="form-group">
                 <label for="nombre">Nombre:</label>
@@ -37,36 +39,38 @@
                 <input type="email" id="email" name="email" required>
               </div>
               <div class="form-group">
-                <label for="comentarios">Comentarios:</label>
-                <textarea id="comentarios" name="comentarios" required></textarea>
+                <label for="comentarios">Contraseña:</label>
+                <input type="password" id="email" name="email" required>
               </div>
               
               <div class="form-group">
-                <button type="submit">Enviar</button>
+                <button type="submit">Registrarme</button>
               </div>
             </form>
+            <p>¿ Ya tienes cuenta ? <a href="">Click aqui</a></p><br>
+            <p>Al registrarse,acepta nuestras condiciones de uso y politica de privacidad.</p>
+            
           </div>
+          
         </section>
-
         <footer class="footer">
-            <div class="footer-content">
-              <div class="footer-left">
-                <p>Grupo (?) &copy; 2023</p>
+          <div class="footer-content">
+            <div class="footer-left">
+              <p>Grupo (?) &copy; 2023</p>
+            </div>
+            <div class="footer-right">
+              <div class="social-media">
+                <a href="#"><img src="/img/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="/img/facebook.png" alt="Facebook"></a>
               </div>
-              <div class="footer-right">
-                <div class="social-media">
-                  <a href="#"><img src="/img/instagram.png" alt="Instagram"></a>
-                  <a href="#"><img src="/img/facebook.png" alt="Facebook"></a>
-                </div>
-                <div class="newsletter">
-                  <form>
-                    <input type="email" placeholder="Ingresa tu correo electrónico">
-                    <button type="submit">Suscribirse</button>
-                  </form>
-                </div>
+              <div class="newsletter">
+                <form>
+                  <input type="email" placeholder="Ingresa tu correo electrónico">
+                  <button type="submit">Suscribirse</button>
+                </form>
               </div>
             </div>
-          </footer>
-
+          </div>
+        </footer>
 </body>
 </html>
