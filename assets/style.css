@@ -81,7 +81,8 @@ header .nav-links li:hover {
 
 /* Estilos del contenido principal */
 .content {
-  min-height: calc(100vh - 170px); /* 170px es la altura estimada del header y el footer juntos */
+  min-height: calc(100vh - 255px); /* Ajusta la altura según tus necesidades */
+  padding-bottom: 100px; /* Agrega un espacio inferior para el footer */
 }
 
 .container {
@@ -130,12 +131,10 @@ h1 {
 
 /* Estilos del footer */
 .footer {
- 
   padding: 20px;
   text-align: center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  position: relative; /* Cambia a posición relativa */
+  margin-top: 50px; /* Agrega un margen superior para separarlo del contenido principal */
 }
 
 .footer-content {
@@ -202,6 +201,123 @@ h1 {
 @media (max-width: 600px) {
   .container {
     max-width: 100%;
+    
+  }
+  .content {
+    min-height: calc(100vh - 315px); /* Ajusta la altura según tus necesidades */
+  }
+
+}
+/* Estilos del home */
+.sugerencias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sugerencias > div {
+  border-radius: 20px;
+  color: white;
+  background-color: rgb(38, 108, 170);
+  margin: 20px;
+  text-align: center;
+  width: calc(50% - 40px); /* Ajusta el ancho según tus necesidades */
+  max-width: 600px; /* Limita el ancho máximo */
+  min-width: 300px; /* Establece un ancho mínimo */
+  padding: 20px;
+  
+}
+
+.sugerencias > div h1 {
+  margin-top: 0;
+  font-family:'Russo One', sans-serif;
+  font-size: 50px;
+}
+
+.sugerencias > div p {
+  margin-bottom: 0;
+  font-size: 25px;
+}
+/* estilo caja de chat*/
+.chat-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh; /* Por defecto en PC */
+  max-width: 80%; /* Por defecto en móvil */
+  margin: 0 auto;
+  border: 2px solid #ddd; /* Agrega un borde de color */
+  border-radius: 10px; /* Agrega bordes redondeados */
+  padding: 20px; /* Aumenta el espacio interno */
+}
+
+@media (min-width: 600px) {
+  .chat-box {
+    height: 50vh;
+    max-width: 50%;
   }
 }
-/* Estilos del login */
+
+.messages {
+  overflow-y: auto; /* Cambia a auto para mostrar barras de desplazamiento solo cuando sea necesario */
+  flex-grow: 1;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.message-content {
+  background-color: #F2F2F2;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+.user-image {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.left {
+  justify-content: flex-start;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+.input-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #F2F2F2;
+}
+
+.input-area input[type="text"] {
+  flex-grow: 1;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.input-area button {
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none
