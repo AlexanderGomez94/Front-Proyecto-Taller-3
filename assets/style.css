@@ -131,83 +131,75 @@ h1 {
 
 /* Estilos del footer */
 .footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; /* Ajusta la altura según tus necesidades */
+  background-color: #f1f1f1;
   padding: 20px;
   text-align: center;
-  position: relative; /* Cambia a posición relativa */
-  margin-top: 50px; /* Agrega un margen superior para separarlo del contenido principal */
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
 }
 
-.footer-content {
+.footer img {
+  width: 20px;
+  margin: 0 5px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer a:hover {
+  color: #000;
+}
+
+.author {
+  font-weight: bold;
+}
+
+.subscribe {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-}
-
-.footer-left {
-  flex: 1;
-}
-
-.footer-right {
-  flex: 1;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   margin-top: 10px;
 }
 
-.footer p {
-  font-size: 14px;
-  color: #666;
+.subscribe p {
+  margin-right: 5px;
 }
 
-.social-media {
-  margin-right: 20px;
-}
-
-.social-media a {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.social-media img {
-  height: 30px;
-  width: auto;
-}
-
-.newsletter form {
+.subscribe-input {
   display: flex;
   align-items: center;
 }
 
-.newsletter input[type="email"] {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 200px;
-  margin-right: 10px;
+.subscribe-input input[type="email"] {
+  margin-right: 5px;
+  padding: 5px;
+  border: 1px solid #333;
+  border-radius: 5px;
 }
 
-.newsletter button {
-  padding: 10px;
+.subscribe-input button {
+  padding: 5px 10px;
   background-color: #4CAF50;
-  color: #fff;
+  color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-@media (max-width: 600px) {
-  .container {
-    max-width: 100%;
-    
-  }
-  .content {
-    min-height: calc(100vh - 315px); /* Ajusta la altura según tus necesidades */
-  }
-
-}
 /* Estilos del home */
 .sugerencias {
   display: flex;
@@ -242,7 +234,7 @@ h1 {
 .chat-box {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch; /* Ajusta el ancho de los elementos internos al 100% del cuadro de chat */
   justify-content: center;
   height: 50vh; /* Por defecto en PC */
   max-width: 80%; /* Por defecto en móvil */
@@ -321,3 +313,4 @@ h1 {
   background-color: #4CAF50;
   color: white;
   border: none
+}
